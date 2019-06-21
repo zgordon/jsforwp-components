@@ -1,0 +1,25 @@
+.color-swatch {
+  display: flex;
+}
+
+.color-swatch h3 {
+  text-transform: capitalize;
+}
+
+.color-swatch div {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  height: 4rem;
+  position: relative;
+  /* justify-content: center; */
+}
+
+.color-swatch div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}

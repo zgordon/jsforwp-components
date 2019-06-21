@@ -1,0 +1,140 @@
+.lesson-list {
+  background: var(--white);
+}
+.lesson-list h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: inherit;
+  position: relative;
+}
+
+.lesson-list ul,
+.lesson-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.lesson-list h4,
+.lesson-list li li {
+  padding-left: 1rem;
+  margin: 0 -1rem;
+  transition: var(--trans-all);
+}
+
+.lesson-list > ul {
+  padding: 0px 16px;
+  border: 1px var(--mono-lighter) solid;
+  border-radius: 5px;
+  /* max-height: 10rem;
+  overflow-y: scroll; */
+}
+
+.lesson-list > ul::-webkit-scrollbar {
+  background: var(--mono-lightest);
+}
+
+.lesson-list > ul::-webkit-scrollbar-thumb {
+  background: var(--mono-light);
+}
+
+.lesson-list li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.lesson-list li li {
+  font-size: 1rem;
+}
+
+.lesson-list ul a {
+  /* background: var(--white); */
+  border-left: 2px var(--mono-lighter) solid;
+  color: var(--mono);
+  position: relative;
+  text-decoration: none;
+  display: block;
+  padding: 0.6rem 1rem;
+}
+
+.lesson-list li a:before {
+  content: "";
+  position: absolute;
+  height: var(--dot-small-size);
+  width: var(--dot-small-size);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -7px;
+  border-radius: 10px;
+  background: var(--white);
+  border: 2px var(--mono-lighter) solid;
+  transition: var(--trans-all);
+}
+
+.lesson-list li h4 a:before {
+  width: var(--dot-medium-size);
+  height: var(--dot-medium-size);
+  left: -9.5px;
+}
+
+.lesson-list .completed a:before {
+  background: var(--mono-light);
+  border-color: var(--mono-light);
+  transition: var(--trans-all);
+}
+
+.lesson-list h4:hover,
+.lesson-list li li:hover {
+  background: var(--mono-lightest);
+}
+
+.lesson-list h4.active:hover,
+.lesson-list li li.active:hover {
+  /* background: var(--mono-lighter); */
+}
+
+.lesson-list h4:hover a:before,
+.lesson-list li li:hover a:before {
+  border-color: var(--mono-light);
+}
+
+.lesson-list .completed:hover a:before {
+  background-color: var(--mono);
+  border-color: var(--mono);
+}
+
+.lesson-list h4.active,
+.lesson-list li li.active {
+  background: var(--mono-lightest);
+  padding-left: 1rem;
+  margin: 0 -1rem;
+}
+
+.lesson-list h4.active:hover,
+.lesson-list li li.active:hover {
+  /* background: var(--mono-lighter); */
+}
+
+.lesson-list .toggle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-weight: bold;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20rem;
+  border: 1px var(--mono-lighter) solid;
+  color: var(--mono-lighter);
+  background: var(--white);
+  z-index: 100;
+}
+
+.lesson-list li .toggle:hover {
+  background: var(--white);
+  border-color: var(--mono-light);
+  color: var(--mono-light);
+  cursor: pointer;
+}

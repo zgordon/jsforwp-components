@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Pacifico");
+
+:root {
+  --mono: #323a45;
+  --mono-light: #aeb0b5;
+  --mono-lighter: #d6d7d9;
+  --mono-lightest: #f1f1f1;
+  --white: #fff;
+  --yellow: #fdb81e;
+  --yellow-light: #f9c642;
+  --yellow-lighter: #fad980;
+  --yellow-lightest: #fff1d2;
+  --green: #2e8540;
+  --green-light: #4aa564;
+  --green-lighter: #94bfa2;
+  --green-lightest: #e7f4e4;
+  --blue: #046b99;
+  --blue-light: #02bfe7;
+  --blue-lighter: #9bdaf1;
+  --blue-lightest: #e1f3f8;
+  --purple: #4c2c92;
+  --purple-lightest: #dcc6e0;
+  --red: #e31c3d;
+  --red-lightest: #f9dede;
+  --border-radius: 5px;
+  --dot-small-size: 8px;
+  --dot-medium-size: 14px;
+  --dot-large-size: 29px;
+  --box-shadow: 0 2px 5px 2px;
+  --ease-speed: 0.4s;
+  --trans-all: all var(--ease-speed) ease;
+}
+
+body {
+  background: var(--mono-lightest);
+}
+
+.page {
+  border: 1px var(--mono-lighter) solid;
+  background: white;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
